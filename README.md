@@ -1,20 +1,20 @@
-# 🌙 TrabajoFront — Cambiador de Tema
+#  TrabajoFront — Cambiador de Tema
 
 Aplicación web desarrollada con **React + Vite** que muestra una tarjeta de perfil con la opción de cambiar entre modo claro y modo oscuro.
 
 ---
 
-## 🚀 ¿Qué hace la aplicación?
+##  ¿Qué hace la aplicación?
 
-- Muestra una tarjeta de perfil con nombre, rol y habilidades.
-- Permite alternar entre **modo claro ☀️** y **modo oscuro 🌙** con un botón.
+- Muestra una tarjeta de perfil con nombre y habilidades.
+- Permite alternar entre **modo claro ** y **modo oscuro ** con un botón.
 - El cambio de tema aplica a toda la página usando clases CSS condicionales.
-- Cada habilidad es un botón interactivo con un popover informativo al hacer clic.
-- El estado del tema se maneja con el hook `useState` de React.
+- Cada habilidad es un botón interactivo con un popover informativo al hacer clic aparece y al volver hacer click desaparece.
+- El estado del tema claro oscuro se maneja con el hook `useState` de React.
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - [React](https://react.dev/) — biblioteca de UI
 - [Vite](https://vitejs.dev/) — bundler y servidor de desarrollo
@@ -22,7 +22,7 @@ Aplicación web desarrollada con **React + Vite** que muestra una tarjeta de per
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 src/
@@ -37,7 +37,7 @@ src/
 
 ---
 
-## ⚙️ Instalación y ejecución
+##  Instalación y ejecución
 
 ### Requisitos previos
 - Node.js >= 18
@@ -61,7 +61,7 @@ Luego abre tu navegador en `http://localhost:5173`
 
 ---
 
-## 🌐 Demo en línea
+##  Demostracion en linea
 
 [https://ManuelMiri.github.io/PROGRAMACION-FRONT-END/](https://ManuelMiri.github.io/PROGRAMACION-FRONT-END/)
 

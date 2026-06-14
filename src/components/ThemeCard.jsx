@@ -2,10 +2,10 @@
 import BotonHability from "./BotonHability";
 import habilidades from "../data/habilidades";
 
-//Componente que recibe isDark como prop desde App.jsx para cambiar su apariencia según el tema actual
+//Componente que recibe isDark como prop desde App.jsx para cambiar su apariencia segun el tema actual
 function ThemeCard({ isDark }) {
   return (
-    // Aca cambia entre fondo oscuro y claro según isDark 
+    // Aca cambia entre fondo oscuro y claro segun isDark 
     <div className={`card text-center p-4 border-0 shadow ${isDark ? "bg-secondary text-light" : "bg-white text-dark"}`}>
 
       <div className="fs-1 mb-2">👨‍💻</div>
