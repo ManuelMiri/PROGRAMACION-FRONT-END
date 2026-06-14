@@ -9,6 +9,7 @@ Aplicación web desarrollada con **React + Vite** que muestra una tarjeta de per
 - Muestra una tarjeta de perfil con nombre, rol y habilidades.
 - Permite alternar entre **modo claro ☀️** y **modo oscuro 🌙** con un botón.
 - El cambio de tema aplica a toda la página usando clases CSS condicionales.
+- Cada habilidad es un botón interactivo con un popover informativo al hacer clic.
 - El estado del tema se maneja con el hook `useState` de React.
 
 ---
@@ -17,7 +18,7 @@ Aplicación web desarrollada con **React + Vite** que muestra una tarjeta de per
 
 - [React](https://react.dev/) — biblioteca de UI
 - [Vite](https://vitejs.dev/) — bundler y servidor de desarrollo
-- CSS propio — estilos sin frameworks externos
+- [Bootstrap 5](https://getbootstrap.com/) — estilos y diseño responsivo
 
 ---
 
@@ -25,10 +26,13 @@ Aplicación web desarrollada con **React + Vite** que muestra una tarjeta de per
 
 ```
 src/
-├── App.jsx              # Componente principal, maneja el estado del tema
-├── App.css              # Estilos generales y variables de tema
+├── App.jsx                    # Componente principal, maneja el estado del tema
+├── App.css                    # Transición suave entre temas
+├── data/
+│   └── habilidades.js         # Array de datos de habilidades
 └── components/
-    └── ThemeCard.jsx    # Componente de tarjeta de perfil
+    ├── ThemeCard.jsx          # Tarjeta de perfil
+    └── BotonHability.jsx      # Botón individual con popover por habilidad
 ```
 
 ---
@@ -43,8 +47,8 @@ src/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/trabajofront.git
-cd trabajofront
+git clone https://github.com/ManuelMiri/PROGRAMACION-FRONT-END.git
+cd PROGRAMACION-FRONT-END
 
 # 2. Instalar dependencias
 npm install
@@ -57,9 +61,16 @@ Luego abre tu navegador en `http://localhost:5173`
 
 ---
 
+## 🌐 Demo en línea
+
+[https://ManuelMiri.github.io/PROGRAMACION-FRONT-END/](https://ManuelMiri.github.io/PROGRAMACION-FRONT-END/)
+
+---
+
 ## 🎨 Decisiones de diseño
 
-- **Paleta:** Azul oscuro (`#1a1a2e`) como base del modo oscuro, gris azulado claro (`#f0f4ff`) para el modo claro.
-- **Componentes:** `App.jsx` maneja el estado y la estructura general; `ThemeCard.jsx` es un componente reutilizable que recibe `isDark` como prop.
-- **Transición:** Se usa `transition` en CSS para que el cambio de tema sea suave y no brusco.
-- **Sin frameworks CSS:** Los estilos son completamente propios para demostrar dominio de CSS.
+- **Bootstrap 5:** Se usó para el diseño responsivo, adaptándose a móvil, tablet y escritorio con el sistema de grilla `col-12 col-sm-8 col-md-6 col-lg-4`.
+- **Componentes separados:** `App.jsx` maneja el estado; `ThemeCard.jsx` muestra la tarjeta; `BotonHability.jsx` es reutilizable para cada habilidad.
+- **Datos separados:** Las habilidades están en `data/habilidades.js`, separadas de la lógica visual.
+- **Popovers:** Cada habilidad muestra información adicional al hacer clic, usando Bootstrap JS y el hook `useRef`.
+- **Transición:** Se usa `transition` en CSS para que el cambio de tema sea suave.

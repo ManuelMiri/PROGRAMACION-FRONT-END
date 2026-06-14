@@ -16,7 +16,7 @@ function App() {
 
   return (
 
-    // Cambia el fondo y color de texto de toda la página segun isDark 
+    // Cambia el fondo y color de texto de toda la pagina segun isDark 
     <div className={`min-vh-100 ${isDark ? "bg-dark text-light" : "bg-light text-dark"}`}>
 
       {/* Navbar tambien cambia de tema segun isDark */}
@@ -31,8 +31,8 @@ function App() {
       <main className="container py-5">
         <div className="row justify-content-center">
           <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-            
-            {/* Pasamos isDark como prop para que ThemeCard también cambie de tema */}
+
+            {/* Pasamos isDark como prop para que ThemeCard tambien cambie de tema */}
             <ThemeCard isDark={isDark} /> 
           </div>
         </div>
