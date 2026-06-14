@@ -16,8 +16,8 @@ function ThemeCard({ isDark }) {
       <hr />
       <h4 className="card-title fw-bold">Habilidades</h4>
       <ul className="list-unstyled text-start mb-3">
-        
-        // key es obligatorio en react cuando se renderizan listas profesora
+
+        {/*key es obligatorio en react cuando se renderizan listas profesora*/}
         {habilidades.map((h) => (
           <BotonHability key={h.nombre} {...h} isDark={isDark} />
         ))}
