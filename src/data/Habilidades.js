@@ -1,4 +1,4 @@
-const habilidades = [
+const Habilidades = [
   {
     emoji: "⚛️",
     nombre: "React & React Native",
@@ -21,4 +21,4 @@ const habilidades = [
   },
 ];
 
-export default habilidades;
+export default Habilidades;

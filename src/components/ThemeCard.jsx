@@ -1,6 +1,6 @@
 // Importamos los componentes para mostrar cada habilidad profesora
 import BotonHability from "./BotonHability";
-import habilidades from "../data/habilidades";
+import Habilidades from "../data/Habilidades";
 
 //Componente que recibe isDark como prop desde App.jsx para cambiar su apariencia segun el tema actual
 function ThemeCard({ isDark }) {
@@ -16,9 +16,9 @@ function ThemeCard({ isDark }) {
       <hr />
       <h4 className="card-title fw-bold">Habilidades</h4>
       <ul className="list-unstyled text-start mb-3">
-
-        {/*key es obligatorio en react cuando se renderizan listas profesora*/}
-        {habilidades.map((h) => (
+         
+        {/*key es para que react no se confunda cuando se renderizan listas profesora*/}
+        {Habilidades.map((h) => (
           <BotonHability key={h.nombre} {...h} isDark={isDark} />
         ))}
       </ul>
