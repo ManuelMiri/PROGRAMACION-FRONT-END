@@ -1,4 +1,4 @@
-#  TrabajoFrontEnd — Cambiador de Tema
+## TrabajoFrontEnd — Cambiador de Tema
 
 Aplicación web desarrollada con **React + Vite** que muestra una tarjeta de perfil con la opción de cambiar entre modo claro y modo oscuro.
 
